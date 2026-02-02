@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Love Journey 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- GIS / Background animation -->
+<canvas id="bgCanvas"></canvas>
+
+<div class="container">
+
+  <!-- SECTION 1: Welcome -->
+  <div class="card active" id="card0">
+    <h1>Hey Love 💕</h1>
+    <p>Welcome to our little world, made just for us. 🌸</p>
+    <p>Every section here is a piece of my heart. 💌</p>
+    <button onclick="nextCard()">Start Our Journey →</button>
+  </div>
+
+  <!-- SECTION 2: Our Story -->
+  <div class="card" id="card1">
+    <h2>Our Story 🌷</h2>
+    <p>From the first smile to every shared secret,  
+    our journey has been magical. ✨</p>
+    <p>I cherish every moment with you, big or small. 💖</p>
+    <div class="gift" onclick="showGift('gift1')">🎁</div>
+    <div id="gift1" class="gift-popup">A virtual hug just for you 🤗</div>
+    <button onclick="nextCard()">Next →</button>
+  </div>
+
+  <!-- SECTION 3: Deep Feelings Quiz -->
+  <div class="card" id="card2">
+    <h2>Let’s Talk Deep 💭</h2>
+    <p>How do you feel happiest with me?</p>
+    <button onclick="nextCard()">Our talks 🌙</button>
+    <button onclick="nextCard()">Small gestures 💕</button>
+    <button onclick="nextCard()">Just being together ✨</button>
+  </div>
+
+  <div class="card" id="card3">
+    <h2>Favorite Memory 💌</h2>
+    <p>Which moment made your heart flutter the most?</p>
+    <button onclick="nextCard()">First time we met 🌸</button>
+    <button onclick="nextCard()">Late-night talks 🌌</button>
+    <button onclick="nextCard()">Our silly adventures 😄</button>
+  </div>
+
+  <!-- SECTION 4: Preferences / Love Languages -->
+  <div class="card" id="card4">
+    <h2>Your Love Language 💖</h2>
+    <p>How do you like being loved?</p>
+    <button onclick="nextCard()">Words of Affirmation 💬</button>
+    <button onclick="nextCard()">Acts of Service 🤍</button>
+    <button onclick="nextCard()">Physical Touch 🫂</button>
+    <button onclick="nextCard()">Gifts 🎁</button>
+  </div>
+
+  <!-- SECTION 5: Dreams & Future -->
+  <div class="card" id="card5">
+    <h2>Our Dreams 🌈</h2>
+    <p>Where do you see us in the future?</p>
+    <button onclick="nextCard()">Traveling the world ✈️</button>
+    <button onclick="nextCard()">Building a cozy home 🏡</button>
+    <button onclick="nextCard()">Chasing dreams together 💖</button>
+    <div class="gift" onclick="showGift('gift2')">🎁</div>
+    <div id="gift2" class="gift-popup">A little surprise kiss 😘</div>
+  </div>
+
+  <!-- SECTION 6: Cute Mini Interaction -->
+  <div class="card" id="card6">
+    <h2>Click the Gift! 🎁</h2>
+    <p>Every gift has a secret message...</p>
+    <div class="gift" onclick="showGift('gift3')">🎁</div>
+    <div id="gift3" class="gift-popup">“I love you more than words can say 💕”</div>
+    <button onclick="nextCard()">Next →</button>
+  </div>
+
+  <!-- SECTION 7: Final Proposal -->
+  <div class="card" id="card7">
+    <h1>So… 💖</h1>
+    <p>I don’t want perfect days.  
+    I want *real* days.  
+    With you.</p>
+    <h2>Will you be my Valentine? 💘</h2>
+    <div class="proposal-buttons">
+      <button class="yes" onclick="yesAnswer()">YES 💕</button>
+      <button class="no" onmouseover="moveNo()">No 🙈</button>
+    </div>
+  </div>
+
+  <!-- SECTION 8: YES Screen -->
+  <div class="card" id="card8">
+    <h1>YAYYYY 💃💖</h1>
+    <p>You just made my heart smile.  
+    This is only the beginning of our forever. 🌷</p>
+    <div id="heart-explosion"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
